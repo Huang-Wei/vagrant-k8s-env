@@ -8,8 +8,9 @@
 
 Take Ubuntu 16.04 for example:
 
-- download the `.deb` tarball: wget https://download.virtualbox.org/virtualbox/5.2.18/virtualbox-5.2_5.2.18-124319~Ubuntu~xenial_amd64.deb.
+- download the `.deb` tarball: wget https://download.virtualbox.org/virtualbox/5.2.18/virtualbox-5.2_5.2.18-124319~Ubuntu~xenial_amd64.deb
 - install it: `sudo dpkg -i virtualbox-*_amd64.deb`
+- (optionally): `sudo apt-get install -f` if previous failed
 - verify it's installed properly: `VBoxManage --version`
 - if some errors show up saying `The vboxdrv kernel module is not loaded`, following steps might help:
     - sudo apt-get update
