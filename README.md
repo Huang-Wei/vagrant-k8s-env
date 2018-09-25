@@ -29,6 +29,8 @@ Then you can distribute this box for sharing. For example on another machine:
       config.vm.provider :virtualbox do |vb|
         vb.name = "istio-workshop"
       end
+      config.ssh.insert_key = false
+      config.ssh.username = "vagrant"
       config.ssh.password = "vagrant"
       config.vm.network "private_network", ip: "172.28.128.13"
     end
